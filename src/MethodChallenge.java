@@ -1,19 +1,6 @@
 public class MethodChallenge {
     public static void main(String[] args) {
-        int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Tim", highScorePosition);
 
-        highScorePosition = calculateHighScorePosition(1000);
-        displayHighScorePosition("Bob", highScorePosition);
-
-        highScorePosition = calculateHighScorePosition(500);
-        displayHighScorePosition("Percy", highScorePosition);
-
-        highScorePosition = calculateHighScorePosition(100);
-        displayHighScorePosition("Gilbert", highScorePosition);
-
-        highScorePosition = calculateHighScorePosition(25);
-        displayHighScorePosition("James", highScorePosition);
     }
 
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
@@ -34,5 +21,18 @@ public class MethodChallenge {
         }
 
         return position;
+    }
+}
+
+class PositiveNegativeZero {
+    // write code here
+    public static void checkNumber(int number){
+        if(number>0){
+            System.out.print("positive");
+        } else if(number < 0){
+            System.out.print("negative");
+        } else if(number == 0){
+            System.out.print("zero");
+        }
     }
 }
