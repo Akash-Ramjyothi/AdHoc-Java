@@ -1,16 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
+        System.out.println("New score is " + calculateScore("Tim",500));
+        System.out.println("New score is "+calculateScore(10));
+    }
 
-        if (score < 5000 && score > 1000) {
-            System.out.println("Your score was less than 5000 but more than 1000");
-        } else if (score < 1000) {
-            System.out.println("Your score was less than 1000");
-        } else {
-            System.out.println("Got here");
-        }
+    public static int calculateScore(String playerName, int score) {
+        System.out.println("Player " + playerName + " scored " + score + " points");
+        return score * 1000;
+    }
+
+    public static int calculateScore(int score) {
+        return calculateScore("Anonymous",score);
+    }
+
+    public static int calculateScore() {
+        System.out.println("No player name, no player score.");
+        return 0;
     }
 }
