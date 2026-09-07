@@ -26,7 +26,6 @@ public class TimeBasedCalculations {
         int hours = minutes / 60;
 
         int remainingMinutes = minutes % 60;
-//        int remainingSeconds = seconds % 60;
 
         return hours + "h " + remainingMinutes + "m " + seconds + "s";
     }
